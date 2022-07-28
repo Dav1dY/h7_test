@@ -1,0 +1,10 @@
+components.c:56:12:rti_start	4	static
+components.c:62:12:rti_board_start	4	static
+components.c:68:12:rti_board_end	4	static
+components.c:74:12:rti_end	4	static
+components.c:83:6:rt_components_board_init	16	static
+components.c:107:6:rt_components_init	16	static
+components.c:158:5:entry	8	static
+components.c:173:6:main_thread_entry	16	static
+components.c:190:6:rt_application_init	32	static
+components.c:213:5:rtthread_startup	8	static

@@ -1,0 +1,5 @@
+cpuport.c:140:13:rt_hw_stack_init	40	static
+cpuport.c:183:6:rt_hw_exception_install	16	static
+cpuport.c:371:6:rt_hw_hard_fault_exception	32	static
+cpuport.c:431:6:rt_hw_cpu_shutdown	8	static
+cpuport.c:441:14:rt_hw_cpu_reset	4	static

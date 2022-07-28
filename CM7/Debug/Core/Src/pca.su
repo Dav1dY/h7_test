@@ -1,0 +1,2 @@
+pca.c:9:6:pca6416_WritePin	32	static
+pca.c:26:6:pca6416_ReadPin	32	static

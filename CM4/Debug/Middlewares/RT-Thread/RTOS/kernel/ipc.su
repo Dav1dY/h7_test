@@ -1,0 +1,13 @@
+rtservice.h:47:16:rt_list_init	16	static
+rtservice.h:73:16:rt_list_insert_before	16	static
+rtservice.h:98:15:rt_list_isempty	16	static
+ipc.c:64:20:rt_ipc_object_init	16	static
+ipc.c:83:20:rt_ipc_list_suspend	32	static
+ipc.c:140:20:rt_ipc_list_resume	24	static
+ipc.c:163:20:rt_ipc_list_resume_all	32	static
+ipc.c:205:10:rt_sem_init	24	static
+ipc.c:237:10:rt_sem_detach	16	static
+ipc.c:326:10:rt_sem_take	32	static
+ipc.c:420:10:rt_sem_trytake	16	static
+ipc.c:433:10:rt_sem_release	24	static
+ipc.c:492:10:rt_sem_control	32	static
