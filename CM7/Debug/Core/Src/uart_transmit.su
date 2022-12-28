@@ -1,1 +1,2 @@
-uart_transmit.c:10:9:uart_monitor	32	static
+uart_transmit.c:10:19:uart_monitor	16	static
+uart_transmit.c:21:9:command_monitor	24	static

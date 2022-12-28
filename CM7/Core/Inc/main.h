@@ -80,8 +80,6 @@ void Error_Handler(void);
 #define OSC_OUT_GPIO_Port GPIOH
 #define OSC_IN_Pin GPIO_PIN_0
 #define OSC_IN_GPIO_Port GPIOH
-#define LED4_Pin GPIO_PIN_15
-#define LED4_GPIO_Port GPIOI
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */

@@ -45,7 +45,8 @@ Core/Src/uart_transmit.o: ../Core/Src/uart_transmit.c \
  ../../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h \
  ../../Middlewares/Third_Party/FreeRTOS/Source/include/task.h \
  ../../Middlewares/Third_Party/FreeRTOS/Source/include/list.h \
- ../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h
+ ../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h \
+ ../Core/Inc/ringbuffer.h
 
 ../Core/Inc/uart_transmit.h:
 
@@ -140,3 +141,5 @@ Core/Src/uart_transmit.o: ../Core/Src/uart_transmit.c \
 ../../Middlewares/Third_Party/FreeRTOS/Source/include/list.h:
 
 ../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h:
+
+../Core/Inc/ringbuffer.h:

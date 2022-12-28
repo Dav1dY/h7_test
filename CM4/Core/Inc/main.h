@@ -61,12 +61,19 @@ void Error_Handler(void);
 #define OSC32_OUT_GPIO_Port GPIOC
 #define OSC32_IN_Pin GPIO_PIN_14
 #define OSC32_IN_GPIO_Port GPIOC
+#define STLINK_TX_Pin GPIO_PIN_10
+#define STLINK_TX_GPIO_Port GPIOA
+#define STLINK_RX_Pin GPIO_PIN_9
+#define STLINK_RX_GPIO_Port GPIOA
 #define CEC_CK_MCO1_Pin GPIO_PIN_8
 #define CEC_CK_MCO1_GPIO_Port GPIOA
 #define OSC_OUT_Pin GPIO_PIN_1
 #define OSC_OUT_GPIO_Port GPIOH
 #define OSC_IN_Pin GPIO_PIN_0
 #define OSC_IN_GPIO_Port GPIOH
+#define LED4_Pin GPIO_PIN_15
+#define LED4_GPIO_Port GPIOI
+void   MX_USART1_UART_Init(void);
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */

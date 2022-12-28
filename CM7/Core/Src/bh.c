@@ -9,7 +9,7 @@
 
 bh1750_t* bh1750_init(uint8_t ADDR_PIN,I2C_HandleTypeDef* i2c_handle)
 {
-/*
+  /*
   uint8_t send_add;
   uint8_t read_add;
   if(ADDR_PIN){
@@ -37,16 +37,19 @@ HAL_StatusTypeDef bh1750_startup(bh1750_t* sensor){
   if(bh1750_Send(sensor,POWER_ON)!=HAL_OK){
     return HAL_ERROR;
   };
-  //if(bh1750_Send(sensor,BH_RESET)!=HAL_OK){
-    //return HAL_ERROR;
-  //};
+  /*
+  if(bh1750_Send(sensor,BH_RESET)!=HAL_OK){
+    return HAL_ERROR;
+  };
+  */
   if(bh1750_Send(sensor,CONTINUOUS_HRES)!=HAL_OK){
     return HAL_ERROR;
   };
-
-	//bh1750_Send(sensor,POWER_ON);
-	//bh1750_Send(sensor,BH_RESET);
-	//bh1750_Send(sensor,CONTINUOUS_HRES);
+  /*
+	bh1750_Send(sensor,POWER_ON);
+	bh1750_Send(sensor,BH_RESET);
+	bh1750_Send(sensor,CONTINUOUS_HRES);
+  */
     return HAL_OK;
 }
 
@@ -95,7 +98,7 @@ HAL_StatusTypeDef send_illuminance(bh1750_t* sensor,UART_HandleTypeDef* huart){
     }
   }
   data[5]=0x0A;
-  if((HAL_UART_Transmit(huart,&data[5-lenth],lenth+1,10))!=HAL_OK){
+  if((HAL_UART_Transmit_IT(huart,&data[5-lenth],lenth+1))!=HAL_OK){
     return HAL_ERROR;
   }
   //HAL_Delay(1000);

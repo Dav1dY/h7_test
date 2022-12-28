@@ -1,0 +1,11 @@
+mpu6050.c:25:12:MPU6050_t_INIT	24	static
+mpu6050.c:35:19:MPU6050_INIT	32	static
+mpu6050.c:120:19:MPU6050_INIT_DMP	8	static
+mpu6050.c:129:19:MPU6050_Read_ACC	32	static
+mpu6050.c:144:19:MPU6050_Read_GYRO	32	static
+mpu6050.c:159:19:MPU6050_Read_TEMP	40	static
+mpu6050.c:173:19:CAL	48	static
+mpu6050.c:224:19:Zero_Offset_Calculates	32	static
+mpu6050.c:238:19:YAW_Calculates	24	static
+mpu6050.c:264:8:Kalman_Get_Angle	96	static
+mpu6050.c:294:19:DMP_Get_Data	24	static

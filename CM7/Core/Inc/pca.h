@@ -35,5 +35,5 @@ extern I2C_HandleTypeDef hi2c1;
 #define PCA_SDA GPIO_PIN_7
 #define PCA_SCL GPIO_PIN_8
 
-#define PCA_ERROR 0x00
-#define PCA_OK 0x01
+HAL_StatusTypeDef pca6416_WritePin(uint8_t io,uint8_t buf);
+HAL_StatusTypeDef pca6416_ReadPin(uint8_t io,uint8_t buf);

@@ -1,6 +1,6 @@
 bh.c:10:11:bh1750_init	24	static
 bh.c:35:19:bh1750_startup	16	static
-bh.c:53:19:bh1750_Send	24	static
-bh.c:60:19:bh1750_Read	24	static
-bh.c:73:19:b1750_ReadFromBuffer	16	static
-bh.c:81:19:send_illuminance	72	static
+bh.c:56:19:bh1750_Send	24	static
+bh.c:63:19:bh1750_Read	24	static
+bh.c:76:19:b1750_ReadFromBuffer	16	static
+bh.c:84:19:send_illuminance	72	static

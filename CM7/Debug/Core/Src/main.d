@@ -44,8 +44,8 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../../Middlewares/Third_Party/FreeRTOS/Source/include/task.h \
  ../../Middlewares/Third_Party/FreeRTOS/Source/include/list.h \
  ../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h \
- ../Core/Inc/key.h ../Core/Inc/bh.h ../Core/Inc/uart_transmit.h \
- ../Core/Inc/bh.h
+ ../Core/Inc/ringbuffer.h ../Core/Inc/bh.h ../Core/Inc/uart_transmit.h \
+ ../Core/Inc/bh.h ../Core/Inc/ringbuffer.h ../Core/Inc/mpu6050.h
 
 ../Core/Inc/main.h:
 
@@ -139,10 +139,14 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 
 ../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h:
 
-../Core/Inc/key.h:
+../Core/Inc/ringbuffer.h:
 
 ../Core/Inc/bh.h:
 
 ../Core/Inc/uart_transmit.h:
 
 ../Core/Inc/bh.h:
+
+../Core/Inc/ringbuffer.h:
+
+../Core/Inc/mpu6050.h:

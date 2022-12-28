@@ -10,6 +10,8 @@ RM := rm -rf
 # All of the sources participating in the build are defined here
 -include sources.mk
 -include Middlewares/Third_Party/FreeRTOS/subdir.mk
+-include Middlewares/MotionDriver/eMPL/subdir.mk
+-include Middlewares/MotionDriver/subdir.mk
 -include Drivers/STM32H7xx_HAL_Driver/subdir.mk
 -include Core/Startup/subdir.mk
 -include Core/Src/subdir.mk
@@ -78,7 +80,7 @@ main-build: H7_test_CM7.elf secondary-outputs
 
 # Tool invocations
 H7_test_CM7.elf: $(OBJS) $(USER_OBJS) C:\Users\David7_Yuan\STM32CubeIDE\workspace_1.8.0\H7_test\CM7\STM32H747XIHX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-g++ -o "H7_test_CM7.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"C:\Users\David7_Yuan\STM32CubeIDE\workspace_1.8.0\H7_test\CM7\STM32H747XIHX_FLASH.ld" -Wl,-Map="H7_test_CM7.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+	arm-none-eabi-g++ -o "H7_test_CM7.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"C:\Users\David7_Yuan\STM32CubeIDE\workspace_1.8.0\H7_test\CM7\STM32H747XIHX_FLASH.ld" -Wl,-Map="H7_test_CM7.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

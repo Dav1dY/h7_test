@@ -6,7 +6,7 @@
  */
 #include "pca.h"
 
-void pca6416_WritePin(uint8_t io,uint8_t buf)
+HAL_StatusTypeDef pca6416_WritePin(uint8_t io,uint8_t buf)
 {
   uint8_t DevAddr = PCA_ADDR|PCA_WRITE;
   uint8_t cmd[2];
@@ -21,9 +21,10 @@ void pca6416_WritePin(uint8_t io,uint8_t buf)
     cmd[1] = buf;
   }
   HAL_I2C_Master_Transmit(&hi2c1, DevAddr, cmd, 2, HAL_MAX_DELAY);
+  return HAL_OK;
 }
 
-void pca6416_ReadPin(uint8_t io,uint8_t buf)
+HAL_StatusTypeDef pca6416_ReadPin(uint8_t io,uint8_t buf)
 {
   uint8_t DevAddr1 = PCA_ADDR|PCA_WRITE;
   uint8_t DevAddr2 = PCA_ADDR|PCA_READ;
@@ -39,10 +40,12 @@ void pca6416_ReadPin(uint8_t io,uint8_t buf)
   }
   else
   {
-	return PCA_ERROR;
+	return HAL_ERROR;
   }
   HAL_I2C_Master_Transmit(&hi2c1, DevAddr1, &cmd, 1, HAL_MAX_DELAY);
 
   HAL_I2C_Master_Receive(&hi2c1,DevAddr2, &buf, 1, HAL_MAX_DELAY);
+
+  return HAL_OK;
 }
 
